@@ -1,0 +1,3114 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>STUDENT_DEMOGRAPHICS</ID>
+  <Name>STUDENT_DEMOGRAPHICS</Name>
+  <CreatedTimestamp>2016-09-01T21:54:50.763333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2016-09-12T18:44:51.843333Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="820" scrolltop="3762" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="19452" y="12404" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dimLocation" left="12193" top="21306" logicalid="20" controlid="1" masterid="0" hint1="0" hint2="0" width="3874" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000220f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dimLocation" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dimOrganization" left="15658" top="13906" logicalid="21" controlid="2" masterid="0" hint1="0" hint2="0" width="6054" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000a617000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dimOrganization" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dimStudentProfile_ISR" left="20" top="7400" logicalid="22" controlid="3" masterid="0" hint1="0" hint2="0" width="5292" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000ac14000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dimStudentProfile_ISR" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dimProgram_SD" left="4174" top="0" logicalid="23" controlid="4" masterid="0" hint1="0" hint2="0" width="5249" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800008114000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dimProgram_SD" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dimDate" left="11823" top="0" logicalid="24" controlid="5" masterid="0" hint1="0" hint2="0" width="4974" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800006e13000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="STUDENT_DEMOGRAPHICS" left="4903" top="21306" logicalid="25" controlid="6" masterid="0" hint1="0" hint2="0" width="4890" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800001a13000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_STUDENT_DEMOGRAPHICS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dimStudentProfile_AID" left="15658" top="7400" logicalid="26" controlid="7" masterid="0" hint1="0" hint2="0" width="4339" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000f31000000a100000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dimStudentProfile_AID" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="factStudentDemographics" left="7712" top="10653" logicalid="27" controlid="8" masterid="0" hint1="0" hint2="0" width="5546" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000aa15000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_factStudentDemographics" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dimMSA" left="1375" top="14800" logicalid="28" controlid="9" masterid="0" hint1="0" hint2="0" width="3937" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000610f00000a100000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dimMSA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10735" top="15353" logicalid="29" controlid="10" masterid="0" hint1="0" hint2="0" width="3795" height="6453" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[factStudentDemographics-dimLocation]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="8" sourceattachpoint="6" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14130" y="21306" />
+              <point x="14130" y="18480" />
+              <point x="11035" y="18480" />
+              <point x="11035" y="15653" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12958" top="13403" logicalid="30" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="3403" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[factStudentDemographics-dimOrganization]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="8" sourceattachpoint="30" destattachpoint="29" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15658" y="16406" />
+              <point x="14458" y="16406" />
+              <point x="14458" y="13703" />
+              <point x="13258" y="13703" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6399" top="4501" logicalid="31" controlid="12" masterid="0" hint1="0" hint2="0" width="3286" height="6452" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[factStudentDemographics-dimProgram_SD]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="8" sourceattachpoint="9" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6798" y="5000" />
+              <point x="6798" y="7826" />
+              <point x="9385" y="7826" />
+              <point x="9385" y="10653" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10735" top="4501" logicalid="32" controlid="13" masterid="0" hint1="0" hint2="0" width="3975" height="6452" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[factStudentDemographics-dimDate]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="8" sourceattachpoint="9" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14310" y="5000" />
+              <point x="14310" y="7826" />
+              <point x="11035" y="7826" />
+              <point x="11035" y="10653" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6949" top="15353" logicalid="33" controlid="14" masterid="0" hint1="0" hint2="0" width="2736" height="6453" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[factStudentDemographics-STUDENT_DEMOGRAPHICS]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="8" sourceattachpoint="8" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7348" y="21306" />
+              <point x="7348" y="18480" />
+              <point x="9385" y="18480" />
+              <point x="9385" y="15653" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12958" top="9054" logicalid="34" controlid="15" masterid="0" hint1="0" hint2="0" width="3000" height="3299" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[factStudentDemographics-dimStudentProfile_AID]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="8" sourceattachpoint="20" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15658" y="9453" />
+              <point x="14458" y="9453" />
+              <point x="14458" y="12053" />
+              <point x="13258" y="12053" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="5012" top="13403" logicalid="35" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="3850" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[factStudentDemographics-dimMSA]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="8" sourceattachpoint="21" destattachpoint="28" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5312" y="16853" />
+              <point x="6512" y="16853" />
+              <point x="6512" y="13703" />
+              <point x="7712" y="13703" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="5012" top="10601" logicalid="36" controlid="17" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[factStudentDemographics-dimStudentProfile_ISR]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="8" sourceattachpoint="31" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5312" y="11000" />
+              <point x="6512" y="11000" />
+              <point x="6512" y="10953" />
+              <point x="7712" y="10953" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dimUniversityPerson" left="7112" top="16262" logicalid="37" controlid="18" masterid="0" hint1="0" hint2="0" width="6293" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800009518000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dimUniversityPerson" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7659" top="15353" logicalid="38" controlid="19" masterid="0" hint1="0" hint2="0" width="926" height="1409" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[factStudentDemographics-dimUniversityPerson]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="18" destid="8" sourceattachpoint="2" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8058" y="16262" />
+              <point x="8058" y="15862" />
+              <point x="8171" y="15862" />
+              <point x="8171" y="16053" />
+              <point x="8285" y="16053" />
+              <point x="8285" y="15653" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>820</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>3762</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2016-09-19T01:04:22.216667Z</LastProcessed>
+  <State>Processed</State>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <Dimensions>
+    <Dimension>
+      <ID>MSA</ID>
+      <Name>MSA</Name>
+      <DimensionID>Dim MSA</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>MSAID</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>County NB</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>GPCI MALPRACTICE</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>GPCI PRACTICE</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>GPCI WORK</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>MSA Name</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>MSA No#</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Thrity Mile</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension>
+      <ID>Student Demographics</ID>
+      <Name>Student Demographics</Name>
+      <DimensionID>STUDENT DEMOGRAPHICS</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>AGE GROUP Program Start</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>AGI BUCKET</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Dependents</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>GRADS</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Marital Status</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>PARENT COLLEGE</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>PELL GRANTED</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>RACE</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Veteran</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>XFER CREDITS</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension>
+      <ID>Organization</ID>
+      <Name>Organization</Name>
+      <DimensionID>Dim Organization</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>Organization ID</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute>
+          <AttributeID>ORG NB</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>ORGANIZATIONAL UNIT NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>ATTENDING DISTRICT NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>SERVICING MARKET NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>ORG MODALITY NM</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension>
+      <ID>Location</ID>
+      <Name>Location</Name>
+      <DimensionID>Dim Location</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>LOCATIONID</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>CITY NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Country Abbreviation</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>COUNTRY NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>STATE CD</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>STATE NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>THIRTY MILE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension>
+      <ID>Program SD</ID>
+      <Name>Program SD</Name>
+      <DimensionID>Dim Program SD</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>PK</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>COLLEGE DEPARTMENT NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>COLLEGE NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>ORGANIZATION NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>PROGRAM ID</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>PROGRAM TYPE NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>EXTERNAL PROG NM</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension>
+      <ID>Student Profile ISR</ID>
+      <Name>Student Profile ISR</Name>
+      <DimensionID>Dim Student Profile ISR</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>Dim Student Profile ISRID</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>XFER CREDITS</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>AGE GROUP Program Start</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>RACE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension>
+      <ID>Student Profile AID</ID>
+      <Name>Student Profile AID</Name>
+      <DimensionID>Dim Student Profile AID</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>Dim Student Profile AIDID</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Marital Status</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>AGI BUCKET</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>PARENT COLLEGE</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>PELL ELIG</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Dependents</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension>
+      <ID>DATE</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>Date</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute>
+          <AttributeID>FISCAL HALF</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Month Value</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Fiscal Year Value</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>FQ Value</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Fiscal Quarter Name</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Month Value 1</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Year Value</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>FY Quarter</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Fiscal Half Part NM</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Week Start Date Value</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy>
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy>
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy>
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension>
+      <ID>University Person</ID>
+      <Name>University Person</Name>
+      <DimensionID>Dim University Person</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>UNIVERSITY PERSON SK</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute>
+          <AttributeID>IRN NB</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Person Name</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>HIGH SCHOOL EDUCATION TYPE NM</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Student Demographics</ID>
+      <Name>Fact Student Demographics</Name>
+      <CreatedTimestamp>2016-09-01T21:54:50.78Z</CreatedTimestamp>
+      <LastSchemaUpdate>2016-09-12T18:44:51.86Z</LastSchemaUpdate>
+      <LastProcessed>2016-09-19T01:04:22.2Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure>
+          <ID>Fact Student Demographics Count</ID>
+          <Name>Student Demographics Record Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source>
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding">
+              <TableID>dbo_factStudentDemographics</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>AGI</ID>
+          <Name>Sum of AGI</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_factStudentDemographics</TableID>
+              <ColumnID>AGI</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>AGE</ID>
+          <Name>Sum of AGE</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_factStudentDemographics</TableID>
+              <ColumnID>AGE</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>AGI Count</ID>
+          <Name>Non Empty AGI Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_factStudentDemographics</TableID>
+              <ColumnID>AGI</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>AGE Count</ID>
+          <Name>Non Empty AGE Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_factStudentDemographics</TableID>
+              <ColumnID>AGE</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>1086422424</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>MSA</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>MSAID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>MSAID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>County NB</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>County_NB</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>GPCI MALPRACTICE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>GPCI_MALPRACTICE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>GPCI PRACTICE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>GPCI_PRACTICE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>GPCI WORK</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>GPCI_WORK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>MSA Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>MSA_Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>MSA No#</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>MSA_No_x0023_</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Thrity Mile</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>Thrity_Mile</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Program SD</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>PK</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>PROGRAMID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>COLLEGE DEPARTMENT NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>400</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>COLLEGE_DEPARTMENT_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>COLLEGE NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>400</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>COLLEGE_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ORGANIZATION NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>320</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>ORGANIZATION_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PROGRAM ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>PROGRAM_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PROGRAM TYPE NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>120</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>PROGRAM_TYPE_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>EXTERNAL PROG NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>EXTERNAL_PROG_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Student Demographics</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>Student_Demographics_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>AGE GROUP Program Start</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>25</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>AGE_GROUP_ProgramStart</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>AGI BUCKET</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>AGI_BUCKET</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Dependents</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>dependents</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Gender</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>Gender</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>GRADS</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>GRADS</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Marital Status</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>marital_status</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PARENT COLLEGE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>PARENT_COLLEGE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PELL GRANTED</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>PELL_GRANTED</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>RACE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>RACE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Veteran</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>veteran</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>XFER CREDITS</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>XFER_CREDITS</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Organization</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Organization ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>OrganizationID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ORG NB</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimOrganization</TableID>
+                    <ColumnID>ORG_NB</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ORGANIZATIONAL UNIT NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>80</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimOrganization</TableID>
+                    <ColumnID>ORGANIZATIONAL_UNIT_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ATTENDING DISTRICT NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>80</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimOrganization</TableID>
+                    <ColumnID>ATTENDING_DISTRICT_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>SERVICING MARKET NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>80</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimOrganization</TableID>
+                    <ColumnID>SERVICING_MARKET_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ORG MODALITY NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimOrganization</TableID>
+                    <ColumnID>ORG_MODALITY_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Location</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>LOCATIONID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>LOCATIONID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>CITY NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>CITY_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Country Abbreviation</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>Country_x0020_Abbreviation</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>COUNTRY NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>40</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>COUNTRY_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>STATE CD</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>STATE_CD</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>STATE NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>STATE_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>THIRTY MILE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>THIRTY_MILE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Student Profile ISR</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Dim Student Profile ISRID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>StudentProfile_ISRID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>XFER CREDITS</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_ISR</TableID>
+                    <ColumnID>XFER_CREDITS</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>AGE GROUP Program Start</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_ISR</TableID>
+                    <ColumnID>AGE_GROUP_ProgramStart</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Gender</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_ISR</TableID>
+                    <ColumnID>Gender</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>RACE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>23</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_ISR</TableID>
+                    <ColumnID>RACE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Student Profile AID</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Dim Student Profile AIDID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>StudentProfile_AIDID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Marital Status</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_AID</TableID>
+                    <ColumnID>marital_status</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>AGI BUCKET</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_AID</TableID>
+                    <ColumnID>AGI_BUCKET</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PARENT COLLEGE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>21</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_AID</TableID>
+                    <ColumnID>PARENT_COLLEGE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PELL ELIG</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_AID</TableID>
+                    <ColumnID>PELL_ELIG</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Dependents</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_AID</TableID>
+                    <ColumnID>dependents</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>DATE</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>DATE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>FISCAL HALF</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>FISCAL_HALF</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Month Value</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>7</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>month_value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Fiscal Year Value</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>fiscal_year_value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>FQ Value</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>7</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>FQ_Value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Fiscal Quarter Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>16</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>fiscal_quarter_name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Month Value 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>7</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>month_value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Year Value</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>year_value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>FY Quarter</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>9</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>FY_x0020_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Fiscal Half Part NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>Fiscal_Half_Part_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Week Start Date Value</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>Week_x0020_Start_x0020_Date_x0020_Value</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>fiscal_year_value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>University Person</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>UNIVERSITY PERSON SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>UNIVERSITY_PERSON_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>IRN NB</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimUniversityPerson</TableID>
+                    <ColumnID>IRN_NB</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Person Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>1024</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimUniversityPerson</TableID>
+                    <ColumnID>Person_x0020_Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>HIGH SCHOOL EDUCATION TYPE NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimUniversityPerson</TableID>
+                    <ColumnID>HIGH_SCHOOL_EDUCATION_TYPE_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions>
+        <Partition>
+          <ID>Fact Student Demographics</ID>
+          <Name>Fact Student Demographics</Name>
+          <CreatedTimestamp>2016-09-01T21:54:50.826667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2016-09-12T18:44:51.906667Z</LastSchemaUpdate>
+          <LastProcessed>2016-09-19T01:04:23.776667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DW</DataSourceViewID>
+            <TableID>dbo_factStudentDemographics</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching>
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" />
+          </ProactiveCaching>
+          <EstimatedSize>1086422424</EstimatedSize>
+        </Partition>
+      </Partitions>
+      <ProactiveCaching>
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" />
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Student Demographics 1</ID>
+      <Name>Fact Student Demographics Distinct</Name>
+      <CreatedTimestamp>2016-09-01T21:54:50.86Z</CreatedTimestamp>
+      <LastSchemaUpdate>2016-09-12T18:44:51.936667Z</LastSchemaUpdate>
+      <LastProcessed>2016-09-19T01:04:22.2Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure>
+          <ID>IRN Distinct Count</ID>
+          <Name>Distinct IRN Count</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_factStudentDemographics</TableID>
+              <ColumnID>IRN</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>453955757</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>MSA</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>MSAID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>MSAID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>County NB</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>County_NB</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>GPCI MALPRACTICE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>GPCI_MALPRACTICE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>GPCI PRACTICE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>GPCI_PRACTICE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>GPCI WORK</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>GPCI_WORK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>MSA Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>MSA_Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>MSA No#</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>MSA_No_x0023_</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Thrity Mile</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>1</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimMSA</TableID>
+                    <ColumnID>Thrity_Mile</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Program SD</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>PK</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>PROGRAMID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>COLLEGE DEPARTMENT NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>400</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>COLLEGE_DEPARTMENT_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>COLLEGE NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>400</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>COLLEGE_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ORGANIZATION NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>320</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>ORGANIZATION_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PROGRAM ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>PROGRAM_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PROGRAM TYPE NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>120</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>PROGRAM_TYPE_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>EXTERNAL PROG NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimProgram_SD</TableID>
+                    <ColumnID>EXTERNAL_PROG_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Student Demographics</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>Student_Demographics_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>AGE GROUP Program Start</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>25</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>AGE_GROUP_ProgramStart</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>AGI BUCKET</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>AGI_BUCKET</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Dependents</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>dependents</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Gender</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>Gender</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>GRADS</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>GRADS</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Marital Status</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>marital_status</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PARENT COLLEGE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>PARENT_COLLEGE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PELL GRANTED</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>PELL_GRANTED</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>RACE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>RACE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Veteran</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>veteran</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>XFER CREDITS</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_STUDENT_DEMOGRAPHICS</TableID>
+                    <ColumnID>XFER_CREDITS</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Organization</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Organization ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>OrganizationID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ORG NB</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimOrganization</TableID>
+                    <ColumnID>ORG_NB</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ORGANIZATIONAL UNIT NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>80</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimOrganization</TableID>
+                    <ColumnID>ORGANIZATIONAL_UNIT_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ATTENDING DISTRICT NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>80</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimOrganization</TableID>
+                    <ColumnID>ATTENDING_DISTRICT_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>SERVICING MARKET NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>80</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimOrganization</TableID>
+                    <ColumnID>SERVICING_MARKET_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ORG MODALITY NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimOrganization</TableID>
+                    <ColumnID>ORG_MODALITY_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Location</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>LOCATIONID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>LOCATIONID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>CITY NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>CITY_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Country Abbreviation</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>Country_x0020_Abbreviation</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>COUNTRY NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>40</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>COUNTRY_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>STATE CD</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>STATE_CD</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>STATE NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>STATE_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>THIRTY MILE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimLocation</TableID>
+                    <ColumnID>THIRTY_MILE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Student Profile ISR</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Dim Student Profile ISRID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>StudentProfile_ISRID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>XFER CREDITS</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_ISR</TableID>
+                    <ColumnID>XFER_CREDITS</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>AGE GROUP Program Start</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_ISR</TableID>
+                    <ColumnID>AGE_GROUP_ProgramStart</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Gender</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_ISR</TableID>
+                    <ColumnID>Gender</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>RACE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>23</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_ISR</TableID>
+                    <ColumnID>RACE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Student Profile AID</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Dim Student Profile AIDID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>StudentProfile_AIDID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Marital Status</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_AID</TableID>
+                    <ColumnID>marital_status</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>AGI BUCKET</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_AID</TableID>
+                    <ColumnID>AGI_BUCKET</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PARENT COLLEGE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>21</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_AID</TableID>
+                    <ColumnID>PARENT_COLLEGE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>PELL ELIG</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_AID</TableID>
+                    <ColumnID>PELL_ELIG</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Dependents</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>12</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimStudentProfile_AID</TableID>
+                    <ColumnID>dependents</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>DATE</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>DATE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>FISCAL HALF</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>FISCAL_HALF</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Month Value</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>7</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>month_value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Fiscal Year Value</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>fiscal_year_value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>FQ Value</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>7</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>FQ_Value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Fiscal Quarter Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>16</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>fiscal_quarter_name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Month Value 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>7</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>month_value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Year Value</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>year_value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>FY Quarter</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>9</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>FY_x0020_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Fiscal Half Part NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>Fiscal_Half_Part_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Week Start Date Value</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>Week_x0020_Start_x0020_Date_x0020_Value</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimDate</TableID>
+                    <ColumnID>fiscal_year_value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>University Person</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>UNIVERSITY PERSON SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_factStudentDemographics</TableID>
+                    <ColumnID>UNIVERSITY_PERSON_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>IRN NB</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimUniversityPerson</TableID>
+                    <ColumnID>IRN_NB</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Person Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>1024</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimUniversityPerson</TableID>
+                    <ColumnID>Person_x0020_Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>HIGH SCHOOL EDUCATION TYPE NM</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_dimUniversityPerson</TableID>
+                    <ColumnID>HIGH_SCHOOL_EDUCATION_TYPE_NM</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions>
+        <Partition>
+          <ID>Fact Student Demographics</ID>
+          <Name>Fact Student Demographics Distinct</Name>
+          <CreatedTimestamp>2016-09-01T21:54:50.906667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2016-09-12T18:44:51.97Z</LastSchemaUpdate>
+          <LastProcessed>2016-09-19T01:04:22.153333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>DW</DataSourceViewID>
+            <TableID>dbo_factStudentDemographics</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching>
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" />
+          </ProactiveCaching>
+          <EstimatedSize>453955757</EstimatedSize>
+        </Partition>
+      </Partitions>
+      <ProactiveCaching>
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" />
+      </ProactiveCaching>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source>
+    <DataSourceViewID>DW</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript>
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>2016-09-01T21:54:50.92Z</CreatedTimestamp>
+      <LastSchemaUpdate>2016-09-12T18:44:51.983333Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg AGI]
+ AS IIF([Measures].[Non Empty AGI Count]=0,0,[Measures].[Sum of AGI]/[Measures].[Non Empty AGI Count]), 
+FORMAT_STRING = "$###,##0.00;($###,##0.00)", 
+FORE_COLOR = 4227327,
+DISPLAY_FOLDER = 'Fact Student Demographics',
+VISIBLE = 1  ; 
+
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Avg AGE]
+ AS [Measures].[Sum of AGE]/[Measures].[Non Empty AGE Count], 
+FORMAT_STRING = "$###,##0.00;($###,##0.00)", 
+FORE_COLOR = 4227327,
+DISPLAY_FOLDER = 'Fact Student Demographics',
+VISIBLE = 1  ; 
+
+
+
+
+
+
+/*
+CREATE MEMBER CURRENTCUBE.[Measures].[Records Percentage]
+AS  
+FORMAT_STRING = "##.00%",
+VISIBLE = 1;
+*/
+
+
+/*
+CREATE MEMBER CURRENTCUBE.[Measures].[IRN Count] AS
+[Measures].[Student Demographics Record Count],
+FORMAT_STRING = '###,###',
+VISIBLE = 1;
+*/
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[IRN Avg Count] AS
+VBA!ROUND([Measures].[Student Demographics Record Count]/(iif(IsLeaf([DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER), 1,
+COUNT(NONEMPTY(Descendants([DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER,[DATE].[FISCAL YEAR-HALF-QUARTER].[FISCAL YEAR QUARTER] ),[Measures].[Student Demographics Record Count] )))),0),
+FORMAT_STRING = '###,###',
+DISPLAY_FOLDER = 'Fact Student Demographics',
+VISIBLE = 1;
+
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[IRN Distinct Count] AS
+[Measures].[Distinct IRN Count],
+FORMAT_STRING = '###,###',
+DISPLAY_FOLDER = 'Fact Student Demographics',
+VISIBLE = 1;
+
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[IRN Count Pre Qtr] 
+AS (PARALLELPERIOD([DATE].[FISCAL YEAR-HALF-QUARTER].[FISCAL YEAR QUARTER], 1,[DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER), 
+[Measures].[Distinct IRN Count]),
+FORMAT_STRING = '###,###',
+DISPLAY_FOLDER = 'Fact Student Demographics',
+VISIBLE = 1;
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[IRN Count Pre Yr]
+AS (PARALLELPERIOD([DATE].[FISCAL YEAR-HALF-QUARTER].[FISCAL YEAR], 1, [DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER), 
+[Measures].[Distinct IRN Count]),
+FORMAT_STRING = '###,###',
+DISPLAY_FOLDER = 'Fact Student Demographics',
+VISIBLE = 1;
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[IRN Count Growth QoQ]
+AS IIF([Measures].[IRN Count Pre Qtr] = 0 OR isempty([Measures].[IRN Count Pre Qtr])
+ OR isempty([Measures].[Distinct IRN Count]), NULL, 
+([Measures].[Distinct IRN Count]-[Measures].[IRN Count Pre Qtr])/[Measures].[IRN Count Pre Qtr]),
+FORMAT_STRING = '0.000;(0.000)',
+DISPLAY_FOLDER = 'Fact Student Demographics',
+VISIBLE =1;
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[IRN Count Growth YoY]
+AS IIF([Measures].[IRN Count Pre Yr] = 0 OR isempty([Measures].[IRN Count Pre Yr]) OR
+isempty([Measures].[Distinct IRN Count]), NULL, 
+([Measures].[Distinct IRN Count]-[Measures].[IRN Count Pre Yr])/[Measures].[IRN Count Pre Yr]),
+FORMAT_STRING = '0.000;(0.000)',
+DISPLAY_FOLDER = 'Fact Student Demographics',
+VISIBLE = 1;
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Current Month] 
+AS 'MONTH(NOW())',
+VISIBLE = 0;
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Current Calendar Year] 
+AS 'YEAR(NOW())',
+VISIBLE = 0;
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Current Fiscal Year] 
+AS IIF([Measures].[Current Month]=9 OR [Measures].[Current Month]=10 OR [Measures].[Current Month]=11 OR [Measures].[Current Month]=12, [Measures].[Current Calendar Year]+1, [Measures].[Current Calendar Year]),
+VISIBLE = 0;
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Previous Fiscal Year] 
+AS [Measures].[Current Fiscal Year]-1,
+VISIBLE = 0;
+
+
+
+
+CREATE SET [XFER Credits Set] AS
+EXCEPT([Student Demographics].[XFER Credits].[ALL].CHILDREN, {[Student Demographics].[XFER Credits].&amp;[Not Reported],[Student Demographics].[XFER Credits].[All].UNKNOWNMEMBER });
+
+CREATE SET [Veteran Set] AS
+EXCEPT([Student Demographics].[Veteran].[ALL].CHILDREN, {[Student Demographics].[Veteran].&amp;[Not Reported],[Student Demographics].[Veteran].[All].UNKNOWNMEMBER});
+
+
+
+
+CREATE SET [Race Set] AS
+EXCEPT([Student Demographics].[Race].[ALL].CHILDREN, {[Student Demographics].[Race].&amp;[Not Reported], [Student Demographics].[Race].[All].UNKNOWNMEMBER});
+
+
+CREATE SET [Marital Status Set] AS
+EXCEPT([Student Demographics].[Marital Status].[ALL].CHILDREN, {[Student Demographics].[Marital Status].&amp;[Not Reported], [Student Demographics].[Marital Status].[All].UNKNOWNMEMBER});
+
+
+CREATE SET [GRADS Set] AS
+EXCEPT([Student Demographics].[GRADS].[ALL].CHILDREN, {[Student Demographics].[GRADS].[All].UNKNOWNMEMBER});
+
+CREATE SET [Gender Set] AS
+EXCEPT([Student Demographics].[Gender].[ALL].CHILDREN, {[Student Demographics].[Gender].&amp;[Not Reported],[Student Demographics].[Gender].[All].UNKNOWNMEMBER });
+
+CREATE SET [Dependents Set] AS
+EXCEPT([Student Demographics].[Dependents].[ALL].CHILDREN, {[Student Demographics].[Dependents].&amp;[Not Reported], [Student Demographics].[Dependents].[All].UNKNOWNMEMBER});
+
+CREATE SET [AGI Bucket Set] AS
+EXCEPT([Student Demographics].[AGI Bucket].[ALL].CHILDREN, {[Student Demographics].[AGI Bucket].&amp;[Not Reported],[Student Demographics].[AGI Bucket].[All].UNKNOWNMEMBER } );
+
+
+CREATE SET [Age Group Actual Start Set] AS
+EXCEPT([Student Demographics].[Age Group Actual Start].[ALL].CHILDREN, {[Student Demographics].[Age Group Actual Start].&amp;[Not Reported], [Student Demographics].[Age Group Actual Start].[All].UNKNOWNMEMBER});
+
+
+CREATE SET [PELL Granted Set] AS
+EXCEPT([Student Demographics].[PELL Granted].[ALL].CHILDREN, {[Student Demographics].[PELL Granted].[All].UNKNOWNMEMBER});
+
+
+CREATE SET [Parent College Set] AS
+EXCEPT([Student Demographics].[Parent College].[ALL].CHILDREN, {[Student Demographics].[Parent College].[All].UNKNOWNMEMBER});
+
+
+CREATE SET [Parent College Set Except Not Reported] AS
+EXCEPT([Student Demographics].[Parent College].[ALL].CHILDREN, {[Student Demographics].[Parent College].[All].UNKNOWNMEMBER, [Student Demographics].[PARENT COLLEGE].&amp;[Not Reported]});
+
+
+CREATE SET [FISCAL YEAR Set] AS
+NONEMPTY([DATE].[FISCAL YEAR].[FISCAL YEAR].MEMBERS, [Measures].[Student Demographics Record Count]);
+
+
+/*
+CREATE SET [5 Year Rolling Window] AS
+strtoset('{[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year])+'],
+				[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-1)+'],
+				[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-2)+'],
+				[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-3)+'],
+				[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-4)+']
+				}');
+*/
+
+
+/*
+CREATE SET [Previous Fiscal Year] AS
+IIF(IsError(StrToSet('[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year])+']')), {}, StrToSet('[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year])+']'));
+*/
+
+
+
+CREATE SET [Previous Fiscal Year] AS
+StrToSet('{[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year])+']}');
+
+
+
+CREATE SET [Two Fiscal Year Ago] AS
+IIF(IsError(StrToSet('{[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-1)+']}')), {}, StrToSet('{[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-1)+']}'));
+
+
+
+CREATE SET [Three Fiscal Year Ago] AS
+IIF(IsError(StrToSet('{[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-2)+']}')), {}, StrToSet('{[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-2)+']}'));
+
+
+CREATE SET [Four Fiscal Year Ago] AS
+IIF(IsError(StrToSet('{[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-3)+']}')), {}, StrToSet('{[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-3)+']}'));
+
+
+CREATE SET [Five Fiscal Year Ago] AS
+StrToSet('{[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-4)+']}');
+
+
+
+/*
+CREATE SET [5 Year Rolling Window] AS
+UNION([Previous Fiscal Year], [Two Fiscal Year Ago], [Three Fiscal Year Ago], [Four Fiscal Year Ago], [Five Fiscal Year Ago]);
+*/
+
+
+
+CREATE SET [5 Year Rolling Window] AS
+strtoset('{[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year])+'],
+				[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-1)+'],
+				[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-2)+'],
+				[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-3)+'],
+				[DATE].[FISCAL YEAR].&amp;['+CSTR([Measures].[Previous Fiscal Year]-4)+']
+				}');
+
+
+
+
+
+
+/*
+CREATE SET [Degreed Set] AS
+{[Program].[Degreed].&amp;[Y]};
+*/
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[XFER Credits Pct]
+AS IIF([Student Demographics].[XFER Credits].CurrentMember is  [Student Demographics].[XFER Credits].&amp;[Not Reported] or
+       [Student Demographics].[XFER Credits].CurrentMember is [Student Demographics].[XFER Credits].[All].UNKNOWNMEMBER, null, [Measures].[IRN Distinct Count]/SUM([XFER Credits Set], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Veteran Pct]
+AS IIF([Student Demographics].[Veteran].CurrentMember is  [Student Demographics].[Veteran].&amp;[3] or
+       [Student Demographics].[Veteran].CurrentMember is [Student Demographics].[Veteran].[All].UNKNOWNMEMBER, null, [Measures].[IRN Distinct Count]/SUM([Veteran Set], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Race Pct]
+AS IIF([Student Demographics].[Race].CurrentMember is  [Student Demographics].[Race].&amp;[Not Reported] or
+       [Student Demographics].[Race].CurrentMember is [Student Demographics].[Race].[All].UNKNOWNMEMBER, null, [Measures].[IRN Distinct Count]/SUM([Race Set], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[PELL Granted Pct]
+AS IIF( [Student Demographics].[PELL Granted].CurrentMember is [Student Demographics].[PELL Granted].[All].UNKNOWNMEMBER, null, [Measures].[IRN Distinct Count]/SUM([PELL Granted Set], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+/*
+CREATE MEMBER CURRENTCUBE.[Measures].[Parent College Pct]
+AS IIF([Student Demographics].[Parent College].CurrentMember is  [Student Demographics].[Parent College].&amp;[4] or
+       [Student Demographics].[Parent College].CurrentMember is [Student Demographics].[Parent College].[All].UNKNOWNMEMBER, null, 
+        [Measures].[IRN Distinct Count]/SUM([Parent College Set], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+*/
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Parent College Pct]
+AS IIF([Student Demographics].[Parent College].CurrentMember is  [Student Demographics].[Parent College].&amp;[4] or
+       [Student Demographics].[Parent College].CurrentMember is [Student Demographics].[Parent College].[All].UNKNOWNMEMBER, null, 
+        [Measures].[IRN Distinct Count]/SUM([Parent College Set Except Not Reported], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+
+
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Marital Status Pct]
+AS IIF([Student Demographics].[Marital Status].CurrentMember is  [Student Demographics].[Marital Status].&amp;[6] or
+       [Student Demographics].[Marital Status].CurrentMember is [Student Demographics].[Marital Status].[All].UNKNOWNMEMBER, null, [Measures].[IRN Distinct Count]/SUM([Marital Status Set], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+
+
+
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[GRADS Pct]
+AS  [Measures].[IRN Distinct Count]/SUM([GRADS Set], [Measures].[IRN Distinct Count]),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Gender Pct]
+AS IIF([Student Demographics].[Gender].CurrentMember is  [Student Demographics].[Gender].&amp;[Not Reported] or
+       [Student Demographics].[Gender].CurrentMember is [Student Demographics].[Gender].[All].UNKNOWNMEMBER, null, [Measures].[IRN Distinct Count]/SUM([Gender Set], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Dependents Pct]
+AS IIF([Student Demographics].[Dependents].CurrentMember is  [Student Demographics].[Dependents].&amp;[3] or
+       [Student Demographics].[Dependents].CurrentMember is [Student Demographics].[Dependents].[All].UNKNOWNMEMBER, null, [Measures].[IRN Distinct Count]/SUM([Dependents Set], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[AGI Bucket Pct]
+AS IIF([Student Demographics].[AGI Bucket].CurrentMember is  [Student Demographics].[AGI Bucket].&amp;[Not Reported] or
+       [Student Demographics].[AGI Bucket].CurrentMember is [Student Demographics].[AGI Bucket].[All].UNKNOWNMEMBER, null, [Measures].[IRN Distinct Count]/SUM([AGI Bucket Set], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Age Group Actual Start Pct]
+AS IIF([Student Demographics].[Age Group Actual Start].CurrentMember is  [Student Demographics].[Age Group Actual Start].&amp;[Not Reported] or
+       [Student Demographics].[Age Group Actual Start].CurrentMember is [Student Demographics].[Age Group Actual Start].[All].UNKNOWNMEMBER, null, [Measures].[IRN Distinct Count]/SUM([Age Group Actual Start Set], [Measures].[IRN Distinct Count] )),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+/*
+CREATE MEMBER CURRENTCUBE.[Measures].[PreviousYear FiveYearAgo Pct]
+AS IIF((PARALLELPERIOD([DATE].[FISCAL YEAR-HALF-QUARTER].[FISCAL YEAR], 5, [DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER), 
+[Measures].[Distinct IRN Count]) IS NULL OR [DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER IS [DATE].[FISCAL YEAR-HALF-QUARTER].[All].UNKNOWNMEMBER, NULL,
+ (PARALLELPERIOD([DATE].[FISCAL YEAR-HALF-QUARTER].[FISCAL YEAR], 1, [DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER), 
+[Measures].[Distinct IRN Count])/(PARALLELPERIOD([DATE].[FISCAL YEAR-HALF-QUARTER].[FISCAL YEAR], 5, [DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER), 
+[Measures].[Distinct IRN Count])),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+*/
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[CAGR]
+AS IIF(( PARALLELPERIOD([DATE].[FISCAL YEAR-HALF-QUARTER].[FISCAL YEAR], 4, [DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER), 
+[Measures].[Distinct IRN Count]) =0  OR [DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER IS [DATE].[FISCAL YEAR-HALF-QUARTER].[All].UNKNOWNMEMBER, NULL,
+ ( ([DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER, 
+[Measures].[Distinct IRN Count])/(PARALLELPERIOD([DATE].[FISCAL YEAR-HALF-QUARTER].[FISCAL YEAR], 4, [DATE].[FISCAL YEAR-HALF-QUARTER].CURRENTMEMBER), 
+[Measures].[Distinct IRN Count]))^(0.2)-1),
+FORMAT_STRING = "##.00%",
+DISPLAY_FOLDER = 'Student Demographics',
+VISIBLE = 1;
+
+
+
+
+
+
+
+/*
+CREATE MEMBER CURRENTCUBE.[Measures].[PELL Granted Percentage]
+AS ([Student Demographics].[PELL GRANTED].&amp;[Y], [Measures].[Student Demographics Record Count])/(([Student Demographics].[PELL GRANTED].&amp;[Y], [Measures].[Student Demographics Record Count])+([Student Demographics].[PELL GRANTED].&amp;[N], [Measures].[Student Demographics Record Count])),
+FORMAT_STRING = "##.00%",
+VISIBLE = 1;
+*/
+
+
+SCOPE([Student Demographics].[Race].[ALL]);
+[Measures].[Race Pct] = 1;
+END SCOPE;
+
+
+
+SCOPE([Student Demographics].[XFER Credits].[ALL]);
+[Measures].[XFER Credits Pct] = 1;
+END SCOPE;
+
+
+
+
+SCOPE([Student Demographics].[Veteran].[ALL]);
+[Measures].[Veteran Pct] = 1;
+END SCOPE;
+
+
+
+
+SCOPE([Student Demographics].[PELL Granted].[ALL]);
+[Measures].[PELL Granted Pct] = 1;
+END SCOPE;
+
+
+
+
+SCOPE([Student Demographics].[Parent College].[ALL]);
+[Measures].[Parent College Pct] = 1;
+END SCOPE;
+
+
+SCOPE([Student Demographics].[Marital Status].[ALL]);
+[Measures].[Marital Status Pct] = 1;
+END SCOPE;
+
+
+
+
+SCOPE([Student Demographics].[GRADS].[ALL]);
+[Measures].[GRADS Pct] = 1;
+END SCOPE;
+
+
+
+
+SCOPE([Student Demographics].[Gender].[ALL]);
+[Measures].[Gender Pct] = 1;
+END SCOPE;
+
+
+
+SCOPE([Student Demographics].[Dependents].[ALL]);
+[Measures].[Dependents Pct] = 1;
+END SCOPE;
+
+
+
+SCOPE([Student Demographics].[AGI Bucket].[ALL]);
+[Measures].[AGI Bucket Pct] = 1;
+END SCOPE;
+
+
+
+SCOPE([Student Demographics].[Age Group Actual Start].[ALL]);
+[Measures].[Age Group Actual Start Pct] = 1;
+END SCOPE
+; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+</Cube>

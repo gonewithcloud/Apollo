@@ -1,0 +1,890 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Course Detail</ID>
+  <Name>Course Detail</Name>
+  <CreatedTimestamp>2016-09-01T21:54:50.516667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2016-09-06T16:53:02.66Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4499" scrolltop="-2447" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="15558" y="12404" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VfactStudentCourse" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="6562" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000a219000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VfactStudentCourse" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4499</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2447</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2016-09-18T23:12:15.306667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute>
+      <ID>Fact Student Course ID</ID>
+      <Name>Fact Student Course ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>factStudentCourseID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>factStudentCourseID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>UNIT 1 ATTENDANCE CD</AttributeID>
+          <Name>UNIT 1 ATTENDANCE CD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>UNIT 2 ATTENDANCE CD</AttributeID>
+          <Name>UNIT 2 ATTENDANCE CD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>UNIT 3 ATTENDANCE CD</AttributeID>
+          <Name>UNIT 3 ATTENDANCE CD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>UNIT 4 ATTENDANCE CD</AttributeID>
+          <Name>UNIT 4 ATTENDANCE CD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>UNIT 5 ATTENDANCE CD</AttributeID>
+          <Name>UNIT 5 ATTENDANCE CD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>UNIT 6 ATTENDANCE CD</AttributeID>
+          <Name>UNIT 6 ATTENDANCE CD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>UNIT 7 ATTENDANCE CD</AttributeID>
+          <Name>UNIT 7 ATTENDANCE CD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>UNIT 8 ATTENDANCE CD</AttributeID>
+          <Name>UNIT 8 ATTENDANCE CD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>UNIT 9 ATTENDANCE CD</AttributeID>
+          <Name>UNIT 9 ATTENDANCE CD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ADG FLAG</AttributeID>
+          <Name>ADG FLAG</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>COURSE ATTENDED IND</AttributeID>
+          <Name>COURSE ATTENDED IND</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>COURSE REPEAT ORDER</AttributeID>
+          <Name>COURSE REPEAT ORDER</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>COURSE UNITS CNT</AttributeID>
+          <Name>COURSE UNITS CNT</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CRSE CMPLT SUCCESS IND</AttributeID>
+          <Name>CRSE CMPLT SUCCESS IND</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DECLARED TRANSFER CREDITS IND</AttributeID>
+          <Name>DECLARED TRANSFER CREDITS IND</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>STD DGR LVL CRSE ATMPT SEQ</AttributeID>
+          <Name>DGR LVL CRSE ATMPT SEQ</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>STD DGR LVL CRSE SUCCESS SEQ</AttributeID>
+          <Name>DGR LVL CRSE SUCCESS SEQ</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>LAST ATTENDED CLASS NB</AttributeID>
+          <Name>LAST ATTENDED CLASS NB</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MATURE IND</AttributeID>
+          <Name>MATURE IND</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>NC INDICATOR VAL</AttributeID>
+          <Name>NC INDICATOR</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>New Tenured Val</AttributeID>
+          <Name>NEW vs TENURED</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>NEXT CREDIT COURSE SCHD TXT</AttributeID>
+          <Name>NEXT CREDIT COURSE SCHD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>PELL</AttributeID>
+          <Name>PELL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>STUDENT PGM CRSE ATMPT SEQ</AttributeID>
+          <Name>PGM CRSE ATMPT SEQ</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>STUDENT PGM CRSE SUCCESS SEQ</AttributeID>
+          <Name>PGM CRSE SUCCESS SEQ</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>RFP FLAG VAL</AttributeID>
+          <Name>RFP FLAG</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>STUDENT COURSE STATUS CD</AttributeID>
+          <Name>STUDENT COURSE STATUS CD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>STUDENT COURSE GRADE CD</AttributeID>
+          <Name>STUDENT COURSE GRADE CD</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>UNIT 1 ATTENDANCE CD</ID>
+      <Name>UNIT 1 ATTENDANCE CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>UNIT_1_ATTENDANCE_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>UNIT_1_ATTENDANCE_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>UNIT 2 ATTENDANCE CD</ID>
+      <Name>UNIT 2 ATTENDANCE CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>UNIT_2_ATTENDANCE_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>UNIT_2_ATTENDANCE_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>UNIT 3 ATTENDANCE CD</ID>
+      <Name>UNIT 3 ATTENDANCE CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>UNIT_3_ATTENDANCE_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>UNIT_3_ATTENDANCE_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>UNIT 4 ATTENDANCE CD</ID>
+      <Name>UNIT 4 ATTENDANCE CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>UNIT_4_ATTENDANCE_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>UNIT_4_ATTENDANCE_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>UNIT 5 ATTENDANCE CD</ID>
+      <Name>UNIT 5 ATTENDANCE CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>UNIT_5_ATTENDANCE_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>UNIT_5_ATTENDANCE_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>UNIT 6 ATTENDANCE CD</ID>
+      <Name>UNIT 6 ATTENDANCE CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>UNIT_6_ATTENDANCE_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>UNIT_6_ATTENDANCE_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>UNIT 7 ATTENDANCE CD</ID>
+      <Name>UNIT 7 ATTENDANCE CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>UNIT_7_ATTENDANCE_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>UNIT_7_ATTENDANCE_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>UNIT 8 ATTENDANCE CD</ID>
+      <Name>UNIT 8 ATTENDANCE CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>UNIT_8_ATTENDANCE_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>UNIT_8_ATTENDANCE_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>UNIT 9 ATTENDANCE CD</ID>
+      <Name>UNIT 9 ATTENDANCE CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>UNIT_9_ATTENDANCE_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>UNIT_9_ATTENDANCE_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ADG FLAG</ID>
+      <Name>ADG FLAG</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>ADG_FLAG</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>6</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>ADG_FLAG</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>COURSE ATTENDED IND</ID>
+      <Name>COURSE ATTENDED IND</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>COURSE_ATTENDED_IND</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>COURSE_ATTENDED_IND</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>COURSE REPEAT ORDER</ID>
+      <Name>COURSE REPEAT ORDER</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>COURSE_REPEAT_ORDER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>COURSE_REPEAT_ORDER</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>COURSE UNITS CNT</ID>
+      <Name>COURSE UNITS CNT</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>COURSE_UNITS_CNT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>COURSE_UNITS_CNT</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CRSE CMPLT SUCCESS IND</ID>
+      <Name>CRSE CMPLT SUCCESS IND</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>CRSE_CMPLT_SUCCESS_IND</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>CRSE_CMPLT_SUCCESS_IND</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DECLARED TRANSFER CREDITS IND</ID>
+      <Name>DECLARED TRANSFER CREDITS IND</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>DECLARED_TRANSFER_CREDITS_IND</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>1</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>DECLARED_TRANSFER_CREDITS_IND</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>STD DGR LVL CRSE ATMPT SEQ</ID>
+      <Name>DGR LVL CRSE ATMPT SEQ</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>STD_DGR_LVL_CRSE_ATMPT_SEQ</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>STD_DGR_LVL_CRSE_ATMPT_SEQ</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>STD DGR LVL CRSE SUCCESS SEQ</ID>
+      <Name>DGR LVL CRSE SUCCESS SEQ</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>STD_DGR_LVL_CRSE_SUCCESS_SEQ</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>STD_DGR_LVL_CRSE_SUCCESS_SEQ</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>LAST ATTENDED CLASS NB</ID>
+      <Name>LAST ATTENDED CLASS NB</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>LAST_ATTENDED_CLASS_NB</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>LAST_ATTENDED_CLASS_NB</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MATURE IND</ID>
+      <Name>MATURE IND</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>MATURE_VAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>MATURE_TXT</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>NC INDICATOR VAL</ID>
+      <Name>NC INDICATOR</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>NC_INDICATOR_VAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>13</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>NC_INDICATOR</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>New Tenured Val</ID>
+      <Name>NEW vs TENURED</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>NewTenured_val</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>7</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>NewTenured</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>NEXT CREDIT COURSE SCHD TXT</ID>
+      <Name>NEXT CREDIT COURSE SCHD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>NEXT_CREDIT_COURSE_SCHD_TXT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>NEXT_CREDIT_COURSE_SCHD_TXT</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>PELL</ID>
+      <Name>PELL</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>PELL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>PELL_TXT</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>STUDENT PGM CRSE ATMPT SEQ</ID>
+      <Name>PGM CRSE ATMPT SEQ</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>STUDENT_PGM_CRSE_ATMPT_SEQ</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>STUDENT_PGM_CRSE_ATMPT_SEQ</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>STUDENT PGM CRSE SUCCESS SEQ</ID>
+      <Name>PGM CRSE SUCCESS SEQ</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>STUDENT_PGM_CRSE_SUCCESS_SEQ</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>STUDENT_PGM_CRSE_SUCCESS_SEQ</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>RFP FLAG VAL</ID>
+      <Name>RFP FLAG</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>RFP_FLAG_VAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>6</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>RFP_FLAG</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>STUDENT COURSE STATUS CD</ID>
+      <Name>STUDENT COURSE STATUS CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>STUDENT_COURSE_STATUS_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>STUDENT_COURSE_STATUS_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>STUDENT COURSE GRADE CD</ID>
+      <Name>STUDENT COURSE GRADE CD</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_VfactStudentCourse</TableID>
+            <ColumnID>STUDENT_COURSE_GRADE_CD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_VfactStudentCourse</TableID>
+          <ColumnID>STUDENT_COURSE_GRADE_CD</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
